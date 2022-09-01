@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Avenir;
+  src: url("AvenirLTStd-Roman.otf");
+}
+
+body {
+  margin: 0 auto;
+  font-family: Avenir, sans-serif;
+  height: 100vh;
+  background: no-repeat top center;
+  background-image: url("bg2150.jpg");
+  background-size: cover;
+  color: #f9f9f9;
+}
