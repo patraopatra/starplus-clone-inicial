@@ -1,16 +1,66 @@
+body{
+  margin: 0 auto;
+}
+.wrapper{
+  max-width: 100%;
+  margin: 0 auto;
+}
+.bg{
+  height: 100vh;
+  background-image: url("bg2150.jpg");
+  background-size: cover;
+  position: relative;
+}
+
 @font-face {
   font-family: Avenir;
   src: url("AvenirLTStd-Roman.otf");
 }
 
-body {
-  margin: 0 auto;
-  font-family: Avenir, sans-serif;
-  height: 100vh;
-  background: no-repeat top center;
-  background-image: url("bg2150.jpg");
-  background-size: cover;
-  color: #f9f9f9;
+@media only screen and (max-width: 1400px){
+  .wrapper .bg {
+      background-image: url("bg1400.jpg");
+  }
+  .wrapper #logo{
+      top: 45%;
+      left: 43.5%;
+  }
+  .wrapper h1{
+          top: 52%;
+          left: 10%;
+          right: 10%;
+  }
+  .wrapper .botaoAssine{
+      max-width: 500px;
+      width: 100%;
+      top: 65%;
+      left: 31%;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  .wrapper .bg {
+      background-image: url("bg750.jpg");
+  }
+  .wrapper #logo{
+      top: 35%;
+      left: 33%;
+  }
+  .wrapper h1{
+          top: 40%;
+          left: 10%;
+          right: 10%;
+  }
+  .wrapper .botaoAssine{
+      max-width: 300px;
+      width: 100%;
+      top: 55%;
+      left: 20%;
+  }  
+  .wrapper .seta{
+      top: 75%;
+      left: 44%;
+  }
 }
 
 .botaoEntrar{
