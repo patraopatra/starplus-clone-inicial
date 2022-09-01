@@ -83,3 +83,52 @@ body{
   letter-spacing: 1px;
   float: right;
 }
+
+#logo{
+  width: 180px;
+  height: 55px;
+  top: 59%;
+  left: 45.3%;
+  position: absolute;
+}
+
+h1{
+  font-family: Avenir, sans-serif;
+  font-size: 28px;
+  color: white;
+  top: 67%;
+  left: 36.5%;
+  position: absolute;
+  text-align: center;
+}
+
+.botaoAssine{
+  cursor:pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: #7b00d6;
+  color: white;
+  border: 0;
+  height: 68px;
+  max-width: 700px;
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  width: 100%;
+  top:75%;
+  left:32%;
+}
+
+.seta{
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 93%;
+  left: 49%;
+}
