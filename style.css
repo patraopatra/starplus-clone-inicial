@@ -83,12 +83,14 @@ body{
   letter-spacing: 1px;
   float: right;
   position: absolute;
+  top:16px;
+  right:40px;
 }
 
 #logo{
   width: 180px;
   height: 55px;
-  top: 59%;
+  top: 61.6%;
   left: 45.3%;
   position: absolute;
 }
@@ -97,10 +99,12 @@ h1{
   font-family: Avenir, sans-serif;
   font-size: 28px;
   color: white;
-  top: 67%;
+  top: 69.6%;
   left: 36.5%;
   position: absolute;
   text-align: center;
+  letter-spacing: normal;
+  font-weight: bold;
 }
 
 .botaoAssine{
@@ -122,7 +126,7 @@ h1{
   font-size: 18px;
   line-height: 18px;
   width: 100%;
-  top:75%;
+  top:78.5%;
   left:32%;
 }
 
