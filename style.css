@@ -23,10 +23,10 @@ body{
   }
   .wrapper #logo{
       top: 45%;
-      left: 43.5%;
+      left: 40%;
   }
   .wrapper h1{
-          top: 52%;
+          top: 53%;
           left: 10%;
           right: 10%;
   }
@@ -34,7 +34,8 @@ body{
       max-width: 500px;
       width: 100%;
       top: 65%;
-      left: 31%;
+      left: 17%;
+      right: 20%;
   }
 }
 
@@ -44,21 +45,21 @@ body{
   }
   .wrapper #logo{
       top: 35%;
-      left: 33%;
+      left: 30%;
   }
   .wrapper h1{
-          top: 40%;
-          left: 10%;
-          right: 10%;
+          top: 45%;
+          left: 12%;
+          right: 12%;
   }
   .wrapper .botaoAssine{
       max-width: 300px;
       width: 100%;
-      top: 55%;
-      left: 20%;
+      top: 67%;
+      left: 12%;
   }  
   .wrapper .seta{
-      top: 75%;
+      top: 85%;
       left: 44%;
   }
 }
