@@ -65,6 +65,8 @@ body{
 }
 
 .botaoEntrar{
+  margin: 5px;
+  padding: 8px 16px;
   cursor:pointer;
   border-radius: 4px;
   box-sizing: border-box;
