@@ -66,7 +66,7 @@ body{
 
 .botaoEntrar{
   margin: 5px;
-  padding: 8px 16px;
+  padding: 20.5px 33px;
   cursor:pointer;
   border-radius: 4px;
   box-sizing: border-box;
@@ -75,12 +75,12 @@ body{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   max-width: none;
   height: 50px;
   top:16px;
   right:40px;
-  background-color: #4e4a59;
+  background-color: #6421ff;
   border: 0;
   color: white;
   font-family: Avenir, sans-serif;
