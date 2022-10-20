@@ -2,7 +2,7 @@ function voltar() {
   window.history.back();
 }
 
-function teste() {
+function pegarToken() {
   fetch('https://reqres.in/api/login', {
     method: 'POST',
     headers: {
