@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <title>Saiba mais sobre o Star+</title>        
-  </head>
-  <body>
-    <div class = "wrapper">
-      <div class="bg"></div>      
-      <button class = "botaoEntrar">ENTRAR</button>
-      <img src="logo.svg" alt="Logo Star+" id="logo">
-      <h1>Séries, filmes e esportes que você adora.</h1>
-      <button class="botaoAssine">ESCOLHA SEU PLANO</button>      
-      <button type="button" class="seta"><img src="seta.png"></button>
-    </div>
-  </body>
-  <div id="abrirLogin" class="modalAdd">
-    <div id="telaLogin">
-      <a href="#fechar" title="Fechar" class="fechar" onclick="voltar()">X</a>
-      <form action="">
-        <label for="nome">Usuário:</label>
-        <input id="entradaLogin" type="text" class="cemail" value="eve.holt@reqres.in"
-        placeholder="Digite o email" autocomplete="off"/>
-        <label for="descricao">Senha:</label>
-        <input id="entradaLogin" type="password" class="cpassword" value="cityslicka"
-        placeholder="Digite a senha" autocomplete="off"/>
-        <div class="Entrar" onclick="pegarToken()">
-          <p>ENTRAR</p>
-        </div>
-      </form>
-    </div>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Saiba mais sobre o Star+</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="bg"></div>
+    <a href="#abrirLogin">
+      <button class="botaoEntrar">ENTRAR</button>
+    </a>
+    <img src="logo.svg" alt="Logo Star+" id="logo">
+    <h1>Séries, filmes e esportes que você adora.</h1>
+    <button class="botaoAssine">ESCOLHA SEU PLANO</button>
+    <button type="button" class="seta"><img src="seta.png"></button>
   </div>
-  <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+<div id="abrirLogin" class="modalAdd">
+  <div id="telaLogin">
+    <a href="#fechar" title="Fechar" class="fechar" onclick="voltar()">X</a>
+    <form action="">
+      <label for="nome">Usuário:</label>
+      <input id="entradaLogin" type="text" class="cemail" value="eve.holt@reqres.in" placeholder="Digite o email"
+        autocomplete="off" />
+      <label for="descricao">Senha:</label>
+      <input id="entradaLogin" type="password" class="cpassword" value="cityslicka" placeholder="Digite a senha"
+        autocomplete="off" />
+      <div class="Entrar" onclick="pegarToken()">
+        <p>ENTRAR</p>
+      </div>
+    </form>
+  </div>
+</div>
+
 </html>
+<script type="text/javascript" src="javascript.js"></script>
     
