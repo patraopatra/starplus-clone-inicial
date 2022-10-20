@@ -1,11 +1,13 @@
-body{
+body {
   margin: 0 auto;
 }
-.wrapper{
+
+.wrapper {
   max-width: 100%;
   margin: 0 auto;
 }
-.bg{
+
+.bg {
   height: 100vh;
   background-image: url("bg2150.jpg");
   background-size: cover;
@@ -17,57 +19,64 @@ body{
   src: url("AvenirLTStd-Roman.otf");
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1400px) {
   .wrapper .bg {
-      background-image: url("bg1400.jpg");
+    background-image: url("bg1400.jpg");
   }
-  .wrapper #logo{
-      top: 45%;
-      left: 40%;
+
+  .wrapper #logo {
+    top: 45%;
+    left: 40%;
   }
-  .wrapper h1{
-          top: 53%;
-          left: 10%;
-          right: 10%;
+
+  .wrapper h1 {
+    top: 53%;
+    left: 10%;
+    right: 10%;
   }
-  .wrapper .botaoAssine{
-      max-width: 500px;
-      width: 100%;
-      top: 65%;
-      left: 17%;
-      right: 20%;
+
+  .wrapper .botaoAssine {
+    max-width: 500px;
+    width: 100%;
+    top: 65%;
+    left: 17%;
+    right: 20%;
   }
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 750px) {
   .wrapper .bg {
-      background-image: url("bg750.jpg");
+    background-image: url("bg750.jpg");
   }
-  .wrapper #logo{
-      top: 35%;
-      left: 30%;
+
+  .wrapper #logo {
+    top: 35%;
+    left: 30%;
   }
-  .wrapper h1{
-          top: 45%;
-          left: 12%;
-          right: 12%;
+
+  .wrapper h1 {
+    top: 45%;
+    left: 12%;
+    right: 12%;
   }
-  .wrapper .botaoAssine{
-      max-width: 300px;
-      width: 100%;
-      top: 67%;
-      left: 12%;
-  }  
-  .wrapper .seta{
-      top: 85%;
-      left: 44%;
+
+  .wrapper .botaoAssine {
+    max-width: 300px;
+    width: 100%;
+    top: 67%;
+    left: 12%;
+  }
+
+  .wrapper .seta {
+    top: 85%;
+    left: 44%;
   }
 }
 
-.botaoEntrar{
+.botaoEntrar {
   margin: 5px;
   padding: 8px 16px;
-  cursor:pointer;
+  cursor: pointer;
   border-radius: 4px;
   box-sizing: border-box;
   vertical-align: middle;
@@ -78,8 +87,8 @@ body{
   position: absolute;
   max-width: none;
   height: 50px;
-  top:16px;
-  right:40px;
+  top: 16px;
+  right: 40px;
   background-color: #4e4a59;
   border: 0;
   color: white;
@@ -113,10 +122,10 @@ body{
 
 .Entrar:active {
   transform: translateY(4px);
-  box-shadow: 0 5px rgb(240,240,240);
+  box-shadow: 0 5px rgb(240, 240, 240);
 }
 
-#logo{
+#logo {
   width: 180px;
   height: 55px;
   top: 61.6%;
@@ -124,7 +133,7 @@ body{
   position: absolute;
 }
 
-h1{
+h1 {
   font-family: Avenir, sans-serif;
   font-size: 28px;
   color: white;
@@ -136,8 +145,8 @@ h1{
   font-weight: bold;
 }
 
-.botaoAssine{
-  cursor:pointer;
+.botaoAssine {
+  cursor: pointer;
   border-radius: 4px;
   box-sizing: border-box;
   vertical-align: middle;
@@ -155,11 +164,11 @@ h1{
   font-size: 18px;
   line-height: 18px;
   width: 100%;
-  top:78.5%;
-  left:32%;
+  top: 78.5%;
+  left: 32%;
 }
 
-.seta{
+.seta {
   background-color: transparent;
   border: 0;
   position: absolute;
@@ -195,9 +204,9 @@ h1{
   position: relative;
   margin: 10% auto;
   padding: 15px;
-  background: rgb(240,240,240);
+  background: rgb(240, 240, 240);
   border-radius: 4px;
-  
+
 }
 
 .fechar {
