@@ -76,3 +76,55 @@ function jaLogado() {
     document.querySelector("#Pesquisa").style.display = "inline-block" // aparece a pesquisa
   }
 }
+
+function deletarFilho() {
+  var e = document.querySelector(".displayFilmes");
+  var first = e.firstElementChild;
+  while (first) {
+      first.remove();
+      first = e.firstElementChild;
+  }
+}
+
+function pesquisar(){
+  deletarFilho();
+  var requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+  };
+  fetch(API_URL + document.querySelector("#textoPesquisa").value, requestOptions)
+    .then(response => response.text())
+    .then(result => {
+      resposta = JSON.parse(result)
+      for (var i = 0; i < resposta.results.length; i++) {
+        var obj = resposta.results[i]
+        var a1 = document.createElement('div')
+        a1.className = "container"
+        a1.innerHTML = '<div class="caixaFilme"><div class="Poster"><img class="Poster" src=' + obj.image + ' alt="Poster"></div><div id="Titulo"><span>' + obj.title + '</span></div><div id="Descricao"><span>' + obj.description + '</span></div></div>'
+        document.querySelector(".displayFilmes").appendChild(a1)
+      }
+    })
+    .catch(error => console.log('error', error));
+}
+
+document.querySelector("#botaoPesquisa").addEventListener('click', () =>{
+  pesquisar();
+})
+
+document.querySelector(".Login").addEventListener('click', () => {
+  validar();
+})
+
+document.querySelector(".fechar").addEventListener('click',() => {
+  voltar();
+})
+
+document.querySelector(".botaoEntrar").addEventListener('click', () => {
+  jaLogado();
+})
+
+document.querySelector("#textoPesquisa").addEventListener('keydown', (event) =>{
+  if(event.keyCode == 13){
+    pesquisar();
+    }
+} )
