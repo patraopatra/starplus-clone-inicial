@@ -8,9 +8,14 @@
   <title>Saiba mais sobre o Star+</title>
 </head>
 
-<body>
+<body onload="jaLogado()">
   <div class="wrapper">
-    <div class="bg"></div>
+    <div id="Pesquisa">
+      <input type="text" placeholder="Pesquisar" id="textoPesquisa">
+      <div id="botaoPesquisa">
+        <img src="searchicon.png" alt="Pesquisar">
+      </div>
+    </div>
     <a href="#abrirLogin">
       <button class="botaoEntrar">ENTRAR</button>
     </a>
@@ -19,20 +24,27 @@
     <button class="botaoAssine">ESCOLHA SEU PLANO</button>
     <button type="button" class="seta"><img src="seta.png"></button>
   </div>
+  <div class="displayFilmes"></div>
 </body>
 
 <div id="abrirLogin" class="modalAdd">
   <div id="telaLogin">
-    <a href="#fechar" title="Fechar" class="fechar" onclick="voltar()">X</a>
+    <a href="#fechar" title="Fechar" class="fechar">X</a>
     <form action="">
       <label for="nome">Usuário:</label>
-      <input id="entradaLogin" type="text" class="cemail" value="eve.holt@reqres.in" placeholder="Digite o email"
-        autocomplete="off" />
+      <input id="entradaLogin" value="eve.holt@reqres.in" type="text" class="cemail"
+        placeholder="Digite o email" autocomplete="off" />
       <label for="descricao">Senha:</label>
-      <input id="entradaLogin" type="password" class="cpassword" value="cityslicka" placeholder="Digite a senha"
-        autocomplete="off" />
-      <div class="Entrar" onclick="pegarToken()">
+      <input id="entradaLogin" value="cityslicka" type="password" class="cpassword"
+        placeholder="Digite a senha" autocomplete="off" />
+      <div class="Login">
         <p>ENTRAR</p>
+      </div>
+      <div class="erro" id="erroEscrita">
+        <p>O usuário e senha devem possuir pelo menos 3 caracteres.</p>
+      </div>
+      <div class="erro" id="erroValidacao">
+        <p>Usuário e/ou senha inválido.</p>
       </div>
     </form>
   </div>
@@ -40,4 +52,3 @@
 
 </html>
 <script type="text/javascript" src="javascript.js"></script>
-    
